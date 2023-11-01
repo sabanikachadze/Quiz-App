@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kdam Thmor Pro',sans-serif;
+}
+body{
+  background: url(images/cropped-1920-1080-1332803.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#simple-quiz img{
+  width: 80px;
+}
+.title{
+  display: flex;
+  justify-content: center;
+}
+#question-List{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 10px;  
+}
+
+#simple-quiz{
+  width: 90%;
+  max-width: 350px;
+  padding: 30px 10px 20px;
+  border-radius: 10px;
+}
+#quiz{
+  background: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.question{
+  text-align: center;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+.btn{
+  background: none;
+  text-align: left;
+  border: 2px solid black;
+  border-radius: 3px;
+  height: 40px;
+  width: 90%;
+  font-weight: 600;
+  font-size: 15px;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin: auto;
+  transition: 0.3s ;
+}
+.next-btn{
+  margin: auto;
+  min-width: 60px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  min-height: 30px;
+  background: #2F4F4F;
+ border-radius: 3px;
+ padding: 5px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  color: white;
+}
+.btn:hover:not([disabled]){
+  background: pink;
+  transition: 0.3s;
+}
+.btn:disabled{
+  cursor: no-drop;
+}
+.next-btn:hover{
+  background: lightgreen;
+  transition: 0.3s;
+  color: black;
+}
+.correct{
+  background: rgb(69, 151, 69);
+}
+.incorrect{
+  background: rgb(248, 24, 24);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:750px){
+  #simple-quiz{
+    max-width:700px;
+  } 
+  #simple-quiz img{
+    width: 130px;
+    transition: 1s;
+  }
+  #quiz{
+    padding: 20px;
+  }
+  .question{
+    font-size: 30px;
+  }
+  .btn{
+    height: 60px;
+    padding-left: 20px;
+    font-size: 20px;
+    transition: 1s;
+  }
+  .next-btn{
+    margin-top: 20px;
+    min-height: 50px;
+    min-width: 100px;
+    font-size: 20px;
+    padding: 5px;
+    transition: 1s;
+  }
+}
